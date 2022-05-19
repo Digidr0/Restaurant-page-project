@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --accent-hue: 6;
+  --accent-color: hsl(var(--accent-hue), 93%, 71%);
+}
+body {
+  background-color: rgb(47, 47, 47);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.none {
+  display: none;
+}
+.background {
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(0.3);
+}
+header {
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  font-size: 1.5em;
+
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+}
+
+.back::after {
+  content: " page";
+}
+.back::before {
+  content: "to ";
+  font-size: 0.8rem;
+}
+.back,
+.phone,
+.mail,
+.adress {
+  transition: color 0.2s;
+}
+.back:hover,
+.phone:hover,
+.mail:hover,
+.adress:hover {
+  color: hsl(var(--accent-hue), 93%, 71%);
+  cursor: pointer;
+}
+.contacts {
+  text-align: right;
+}
+.main.content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.top.content {
+  margin: 50px;
+}
+
+.greeting {
+  text-shadow: 1px 1px 3px black;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.greeting > h1 {
+  font-weight: 600;
+  color: white;
+}
