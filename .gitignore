@@ -3,3 +3,6 @@ package.json
 package-lock.json
 node_modules/
 webpack.config.js
+dist/main.js
+dist/eca087cc456001c5af0f.jpg
+dist/ed1d046c6318172d5f77.jpg
